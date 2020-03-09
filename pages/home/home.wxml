@@ -1,3 +1,5 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
 <button>哈哈哈</button>
+
+<view>tag2</view>
