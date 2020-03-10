@@ -1,3 +1,20 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
-<button>哈哈哈</button>
+<!-- 变量要在js里写 变量要用差值表达式 {{}} -->
+<view>hello {{name}}</view>
+---
+<!-- wx:for 是遍历循环 循环时自动生成item item是每次循环的值 -->
+<view wx:for="{{stars}}">{{item.name}}----{{item.age}}</view>
+
+
+<view>{{counter}}</view>
+
+<!-- size 是调整按钮大小 bindtap监听事件 -->
+<button size="mini" bindtap="incBtnClick">+</button>
+<button size="mini" bindtap="redBtnClick">-</button>
+
+<!-- 第二种获取用户信息的方式 -->
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取授权</button>
+
+<!-- 第三种获取用户的信息 只能展示---------------------------------- -->
+
+<open-data type="userNickName"></open-data>

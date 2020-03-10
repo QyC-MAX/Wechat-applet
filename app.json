@@ -1,5 +1,32 @@
 {
   "pages": [
-    "pages/home/home"
-  ]
+    "pages/home/home",
+    "pages/about/about"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "靓仔的家居日常",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "img/tabbar/home.png",
+        "selectedIconPath": "img/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "首页",
+        "iconPath": "img/tabbar/home.png",
+        "selectedIconPath": "img/tabbar/home-active.png"
+      }
+    ],
+    "selectedColor": "#ff5777"
+  },
+  "sitemapLocation": "sitemap76.json"
 }
