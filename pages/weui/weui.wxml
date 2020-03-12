@@ -42,5 +42,5 @@
 <!-- mustache语法-->
   <button bindtap="handleSwitchColor">{{switchColor}}</button>
   <view class="{{isActive ? 'switch-active': ''}}">哈哈哈</view>
-
-  <view>{{nowTime}}</view>
+ 
+  <view>{{nowTime}}</view> 

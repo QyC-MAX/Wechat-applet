@@ -12,13 +12,12 @@
 <!-- 4. 权重 !important > 行内 > 业内 > 全局-->
 <view class="box3" style="background: yellow">权重</view>
 
+
+<!-- 6. 样式导入 就是把一些wxss里面的样式抽取出来放在一个单独的文件 用@import '路径' 方法导入样式 -->
+<button class="btn">按钮</button>
+
 <!-- 5. rpx 在375*667屏幕里 1rpx = 2px rpx会根据屏幕大小自动实现像素比 -->
 <view class="view-rpx1">rpx</view>
 <view class="view-px1">px</view>
-
-
-<!-- 6. 样式导入 就是把一些wxss里面的样式抽取出来放在一个单独的文件 用@import '路径' 方法导入样式 -->
-
-<button class="btn">按钮</button>
 
 <!-- 7. 腾讯样式库 https://github.com/Tencent/weui-wxss -->
