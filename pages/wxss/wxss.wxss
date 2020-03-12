@@ -1,0 +1,21 @@
+/* pages/wxss/wxss.wxss */
+@import './style/import-rpx.wxss';
+.box1 {
+  background: green;
+}
+
+.box3 {
+  background: orange;
+}
+
+/* .view-rpx1 {
+  height: 200rpx;
+  width: 200rpx;
+  background: paleturquoise;
+} */
+
+.view-px1 {
+  height: 100px;
+  width: 100px;
+  background: plum;
+}

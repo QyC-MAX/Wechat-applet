@@ -1,0 +1,5 @@
+.view-rpx1 {
+  height: 200rpx;
+  width: 200rpx;
+  background: paleturquoise;
+}

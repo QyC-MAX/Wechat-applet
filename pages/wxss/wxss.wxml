@@ -1,0 +1,24 @@
+<!--pages/wxss/wxss.wxml-->
+<text>样式的三种写法</text>
+<!-- 1. 行内(内联) -->
+<view style="background: red">行内</view>
+
+<!-- 2. 页内 -->
+<view class="box1">页内</view>
+
+<!-- 3. 全局 在app.wxss 里写 -->
+<view class="box2">全局</view>
+
+<!-- 4. 权重 !important > 行内 > 业内 > 全局-->
+<view class="box3" style="background: yellow">权重</view>
+
+<!-- 5. rpx 在375*667屏幕里 1rpx = 2px rpx会根据屏幕大小自动实现像素比 -->
+<view class="view-rpx1">rpx</view>
+<view class="view-px1">px</view>
+
+
+<!-- 6. 样式导入 就是把一些wxss里面的样式抽取出来放在一个单独的文件 用@import '路径' 方法导入样式 -->
+
+<button class="btn">按钮</button>
+
+<!-- 7. 腾讯样式库 https://github.com/Tencent/weui-wxss -->

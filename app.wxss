@@ -1,0 +1,9 @@
+@import './style/btn.wxss';
+@import '/style/icon/weui-icon.wxss';
+
+.box2 {
+  background: pink;
+}
+.box3 {
+  background: powderblue !important;
+}

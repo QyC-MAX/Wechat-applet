@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/weui/weui",
+    "pages/wxss/wxss",
     "pages/home/home"
-  ]
+  ],
+  "sitemapLocation": "sitemap63.json"
 }
