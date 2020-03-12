@@ -1,0 +1,12 @@
+<!--pages/text/text.wxml-->
+<text>text组件\n</text>
+<!-- 1. selectable -->
+<text selectable>selectable: 长按是否可选,默认是false不可选\n</text>
+
+<!-- 2. decode 是否解码 默认false 不解码 -->
+<text decode>decode 是否解码 默认false 不解码 &gt;\n</text>
+
+<!-- 3. space 显示连续空格的大小 -->
+<text space="ensp">1 2 ensp:中文字符空格一半大小\n</text>
+<text space="emsp">1 2 emsp:中文字符空格大小\n</text>
+<text space="nbsp">1 2 nbsp:根据字体设置的空格大小\n</text>

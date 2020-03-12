@@ -1,0 +1,38 @@
+<!--pages/image/image.wxml-->
+<text>image组件</text>
+
+
+<!-- 1. 可以是双标签 也可以单标签 -->
+<!-- 每个image 默认占320x240px 的空间 -->
+<!-- src 属性可以是本地图片路径或是远程图片路径 -->
+<!-- 远程地址 -->
+<!-- <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image> -->
+<!-- 相对地址 -->
+<!-- <image src="../../img/0.jpg"/> -->
+<!-- 绝对地址 在小程序中 / 开头代表根目录 -->
+<!-- <image src="/img/0.jpg"/> -->
+
+
+
+<!-- 2. 相册：选中图片 -->
+<!-- <button bindtap="handleChooseAlbum">选择图片</button> -->
+<!-- <image src="{{imgPath}}"></image> -->
+
+
+
+<!--3. lazy-load： 图片懒加载  
+       bindload: 监听图片是否加载完成-->
+<image wx:for="{{1}}"
+       src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+       bindload="handleImageLoad"
+       lazy-load
+       ></image>
+
+
+
+
+<!-- 4. show-menu-by-longpress： 长按识别 -->
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" lazy-load
+show-menu-by-longpress
+       ></image>
+

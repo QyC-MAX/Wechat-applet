@@ -1,0 +1,25 @@
+<!--pages/button/button.wxml-->
+<text>button组件</text>
+<!-- 1. button组件默认是行内元素 独占一行 -->
+<button>按钮</button>
+
+<!-- 2. size属性 mini 是小尺寸 变成行内块--> 
+<button size="mini">按钮</button>
+
+<!-- 3. type属性 改变按钮的背景色-->
+<!-- primary 绿色 -->
+<button size="mini" type="primary">按钮</button>
+<!-- default 默认 -->
+<button size="mini" type="default">按钮</button>
+<!-- warn红色 -->
+<button size="mini" type="warn">按钮</button>
+
+<!-- 4. plain 镂空 无背景色-->
+<button size="mini" plain="true">按钮</button>
+
+<!-- 5. loading 等待 可以设置loading的变量 做一些网络请求相关的-->
+<!-- isLoading 在data里是 true-->
+<button size="mini" loading="{{isLoading}}">按钮</button>
+
+<!-- 6. hover-class 点击变背景色 -->
+<button size="mini" hover-class="btn">按钮</button>

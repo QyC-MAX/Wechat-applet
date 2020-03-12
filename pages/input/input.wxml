@@ -1,0 +1,49 @@
+<!--pages/input/input.wxml-->
+<text>input组件</text>
+
+
+<!-- 1. input 基本使用 -->
+<input></input>
+<view>-------------</view>
+
+
+<!-- 2. value 默认的文字 -->
+<input value="666"></input>
+<view>-------------</view>
+
+<!-- 3. type类似 -->
+<!-- text： 文本输入框 -->
+<!-- number	数字输入键盘	 -->
+<!-- idcard	身份证输入键盘	 -->
+<!-- digit	带小数点的数字键盘 -->
+<input type="text"></input>
+<input type="number"></input>
+<input type="idcard"></input>
+<input type="digit"></input>
+<view>-------------</view>
+
+<!-- 4. confirm-type 右下角文字-->
+<!-- send	右下角按钮为“发送”	 -->
+<!-- search	右下角按钮为“搜索”	 -->
+<!-- next	右下角按钮为“下一个”	 -->
+<!-- go	右下角按钮为“前往”	 -->
+<!-- done	右下角按钮为“完成 -->
+<input confirm-type="send"></input>
+<input confirm-type="search"></input>
+<view>-------------</view>
+
+<!-- 5. 占位符 placeholder -->
+<input placeholder="666"></input>
+
+<!-- 6. password 暗文 -->
+<input password></input>
+
+<view>绑定事件</view>
+<!-- bindinput： 键盘输入时触发 -->
+<!-- bindfocus： 获得焦点时触发 -->
+<!-- bindblur： 失去焦点时触发 -->
+<!-- bindconfirm： 点击完成时触发 -->
+<input bindinput="handleInput"
+       bindblur="handleBlur"
+       bindfocus="handleFocus"
+       bindconfirm="handleConfirm"></input>
