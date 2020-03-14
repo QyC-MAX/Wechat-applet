@@ -1,0 +1,7 @@
+<!-- <import src="/template/a.wxml"/> -->
+<!-- <include src="/template/a.wxml"/> -->
+<template name="templateName">
+  <view>{{viewContent}}</view>
+  <text>{{textContent}}</text>
+</template>
+<!-- <view>sss</view> -->

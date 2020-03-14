@@ -1,3 +1,53 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
-<button>哈哈哈</button>
+<text>wxml语法</text>
+<!-- 1. wx:if -->
+<!-- <button bindtap="handleWxif">点击</button>
+<view wx:if="{{condition}}">wx:if</view>
+<view hidden="{{false}}"> hidden</view> -->
+
+<!-- wx:if和hidden的区别： wx:if 隐藏是没有这个元素 hidden隐藏是不显示这个元素，元素还是存在的  -->
+
+<!-- <view wx:if="{{length > 5}}"> 1 </view>
+<view wx:elif="{{length > 2}}"> 2 </view>
+<view wx:else> 3 </view> -->
+
+<!-- 2. wx:for 可以遍历对象，数组  遍历时自动创建item index：索引 -->
+<!-- <view wx:for="{{3}}">{{item}} </view>
+<view wx:for="{{['jion','lou']}}">{{item}} {{index}} </view> -->
+
+<!-- item,index 起名 -->
+<!-- <view wx:for="{{['海尔','海贼王']}}" wx:for-index="i" wx:for-item="num" >{{i}} {{num}}</view> -->
+<!-- wx:key 提高性能-->
+
+<!-- <block wx:for="{{arrs}}" wx:for-item="arrsItem" wx:key="arrs">
+  <block wx:for="{{arrsItem}}" wx:key="arrsItem">
+    <view>{{item}}</view>
+  </block>
+</block> -->
+
+
+
+<!-- 3. block: 这是一个标签，不是组件,用来包裹一些组件，view也可以，但是消耗性能 -->
+<!-- <block wx:if="flase">
+  <view>1</view>
+  <view>2</view>
+</block> -->
+
+
+<!-- 4. template模板 -->
+<!-- name属性 是模板的名字 使用时用到 -->
+<!-- <template name="templateName">
+  <view>{{viewContent}}</view>
+  <text>{{textContent}}</text>
+</template> -->
+<!-- 
+
+模板导入/导出  将模板放入一个单独的文件 用import 导入就可以使用这个模板了 impport 导入是不能递归导入的 比如 b导入a c导入b c不能用a-->
+<!-- 但是include 引入是 除了 模板templeta 和wxs 外的 代码全都导入 可以循环导入 b引入a c导入b c中还是可以显示a-->
+<import src="/template/example.wxml"/> 
+<!-- <include src="/template/example.wxml"/> -->
+
+<!-- is 属性 声明使用的模板 data 是传入模板所需的数据  key: value形式传入-->
+<template is="templateName" data="{{...templateNameData}}"></template>
+<!-- <template is="a"></template> -->
+

@@ -5,9 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    condition: true,
+    arrs: [
+      [12, 55, 6, 222],
+      [62,5,666,2],
+      [312,525,66,22],    
+    ],
+    templateNameData: {
+      viewContent: '我是view的内容',
+      textContent: '我是text的内容'
+    }
   },
-
+  handleWxif() {
+    this.setData({
+      condition: !this.data.condition
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
