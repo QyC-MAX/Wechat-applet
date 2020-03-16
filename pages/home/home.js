@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    stars: ['古力娜扎','杨幂','miss']
   },
 
   /**
@@ -62,5 +62,62 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  // 1
+  handleClick() {
+    console.log('....')
+  },
+
+// 2
+  handleTouchstart() {
+    console.log('handleTouchstart');
+  },
+  handleTap() {
+    console.log('handleTap');
+  },
+  handleTouchend() {
+    console.log('handleTouchend');
+  },
+  handleTouchmove() {
+    console.log('handleTouchmove');
+  },
+  handlelongpress() {
+    console.log('handlelongpress');
+  },
+
+// 3
+  bindOuter() {
+    console.log("handleOuter")
+  },
+  bindInner() {
+    console.log('handleInner')
+  },
+  catchOuter() {
+    console.log("catchOuter")
+  },
+  catchInner() {
+    console.log("catchInner")
+  },
+  
+  // 4
+  handleBtn(event) {
+    console.log(event)
+  },
+  currentTarget(event) {
+    console.log(event)    
+  },
+  target(event) {
+    console.log(event)
+  },
+
+  // 5
+  handleItem(event) {
+    console.log(event)
+    const satrName = event.currentTarget.dataset.item;
+    const satrIndex = event.currentTarget.dataset.index;
+    console.log(satrIndex)
+    console.log(satrName)
+
   }
+
 })

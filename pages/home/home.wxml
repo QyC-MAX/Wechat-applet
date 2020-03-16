@@ -1,3 +1,60 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
-<button>哈哈哈</button>
+<text>事件</text>
+<!-- 1. 事件是写法 -->
+<!-- <button bind:tap="handleClick">哈哈哈</button>
+<button bindtap="handleClick">哈哈哈</button> -->
+
+<!-- 2. 常用事件 -->
+<!-- touchstart	手指触摸动作开始	
+touchmove	手指触摸后移动	
+touchend	手指触摸动作结束	
+tap	手指触摸后马上离开	
+longpress	手指触摸后，超过350ms再离开，如果指定了事件回调函数并触发了这个事件，tap事件将不被触发 -->
+<!-- <view class="box" 
+      bind:tap="handleTap"
+      bind:touchstart="handleTouchstart"
+      bind:touchmove="handleTouchmove"
+      bind:touchend="handleTouchend"
+      bind:longpress="handlelongpress"></view> -->
+
+
+ <!-- 3. 事件有冒泡事件和非冒泡事件 -->
+ <!-- <view>用bind绑定的事件会向上冒泡</view>
+<view class="box1" bindtap="bindOuter">
+    <view class="box" bindtap="bindInner"></view>
+</view>
+
+
+ <view>用catch绑定的事件会阻止向上冒泡</view>
+<view class="box1" catchtap="catchOuter">
+  <view class="box" catchtap="catchInner"></view>
+</view> -->
+
+
+<!-- 4. 事件对象的类型 -->
+<!-- type: 点击的类型 -->
+<!-- touches	Array	触摸事件，当前停留在屏幕中的触摸点信息的数组 
+     changedTouches	Array	触摸事件，当前变化的触摸点信息的数组 记录变化的触摸到信息，哪个手指点击发生变化就记录哪个手指-->
+
+<!-- target	Object	触发事件的组件的一些属性值集合	事件源 -->
+<!-- currentTarget	Object	当前组件的一些属性值集合 触发事件-->
+<view class="box1" bindtap="target" id="outer">
+    <view class="box" bindtap="target" id="inner"></view>
+</view>
+
+<button bindtap="handleBtn">按钮</button>
+
+
+<!-- 5. 事件参数的传递 点击时 把当前的数据传输 -->
+<view class="container">
+  <block wx:for="{{stars}}" wx:key="index">
+  <!-- 传输数据时要用 data-name -->
+    <view class="item" 
+          bindtap="handleItem"
+          data-index="{{index}}"
+          data-item="{{item}}">
+            {{item}}
+          </view>
+  </block>
+</view>
+
